@@ -6,6 +6,12 @@
   "author": "jrock2004",
   "license": "ISC",
   "private": false,
+  "bugs": "https://github.com/jrock2004/cra-template-a11y/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrock2004/cra-template-a11y.git",
+    "homepage": "https://github.com/jrock2004/cra-template-a11y"
+  },
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
