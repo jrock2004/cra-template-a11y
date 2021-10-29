@@ -80,5 +80,9 @@ module.exports = {
     'test-selectors/onClick': ['warn', 'always', { testAttribute: 'data-trackid' }],
     'test-selectors/onKeyDown': ['warn', 'always', { testAttribute: 'data-trackid' }],
     'test-selectors/onKeyUp': ['warn', 'always', { testAttribute: 'data-trackid' }],
+    '@typescript-eslint/no-empty-function': ['error'],
+    'react/no-unescaped-entities': ['warn'],
+    'react/prop-types': 0,
+    '@typescript-eslint/explicit-function-return-type': ['warn'],
   },
 };
