@@ -43,7 +43,7 @@
       "start": "react-scripts start",
       "start:safari": "BROWSER='safari' yarn start",
       "start:firefox": "BROWSER='firefox' yarn start",
-      "server": "node --experimental-modules ./mockServer.js",
+      "server": "node --experimental-modules --experimental-json-modules ./mockServer.mjs",
       "build": "react-scripts build",
       "test": "react-scripts test",
       "eject": "react-scripts eject",
