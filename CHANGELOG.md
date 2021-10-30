@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/jrock2004/cra-template-a11y/compare/v1.2.0...v1.3.0) (2021-10-30)
+
+
+### Features
+
+* adding mock server ([b6fbd9e](https://github.com/jrock2004/cra-template-a11y/commit/b6fbd9ee2d3b0c3ed9c6d1c52b964d3cae7b927d))
+
 ## [1.2.0](https://github.com/jrock2004/cra-template-a11y/compare/v1.1.2...v1.2.0) (2021-10-29)
 
 
