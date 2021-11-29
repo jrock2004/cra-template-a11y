@@ -20,7 +20,7 @@
   },
   "scripts": {
     "release": "standard-version",
-    "deploy": "npm publish",
+    "deploy": "npm publish --access public",
     "prepare": "husky install"
   }
 }
