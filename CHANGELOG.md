@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/jrock2004/cra-template-a11y/compare/v1.4.0...v1.4.1) (2021-11-29)
+
+
+### Bug Fixes
+
+* adding missing tailwind files and adding some css classes ([72a6451](https://github.com/jrock2004/cra-template-a11y/commit/72a645167913fe0eed0344aa7a45062a30b7bdcb))
+
 ## [1.4.0](https://github.com/jrock2004/cra-template-a11y/compare/v1.3.0...v1.4.0) (2021-11-29)
 
 
