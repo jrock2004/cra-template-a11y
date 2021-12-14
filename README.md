@@ -8,6 +8,8 @@ This template will generate a create react app that supports the following featu
 - React Testing Library
 - Conventional Commits
 - Pre-commit hooks(husky)
+- MSW JS Mocking Framework
+- TailwindCSS
 
 ## Getting Started
 
