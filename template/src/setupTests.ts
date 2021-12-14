@@ -5,9 +5,15 @@
 import '@testing-library/jest-dom/extend-expect';
 import 'jest-canvas-mock';
 import { cleanup } from '@testing-library/react';
+import { server } from './mocks/server.js';
+
+beforeAll(() => server.listen());
 
 afterEach(() => {
   jest.resetAllMocks();
+  server.resetHandlers();
   expect.hasAssertions();
   cleanup();
 });
+
+afterAll(() => server.close());

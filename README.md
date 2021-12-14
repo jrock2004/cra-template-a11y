@@ -18,3 +18,9 @@ To use this template when creating a react app, run the following:
 ```
 npx create-react-app your-app-name --template @jrock2004/cra-template-a11y
 ```
+
+Now we want to go into the new directory and run some commands to set some things up
+
+```
+npx msw init public/ --save
+```
