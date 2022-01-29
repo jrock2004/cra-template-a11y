@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 
 import './app.css';
 
-const App: React.FC = (): ReactElement => {
+const App = (): ReactElement => {
   return <h1>Welcome to A11y CRA Template</h1>;
 };
 

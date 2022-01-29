@@ -5,7 +5,7 @@
 import '@testing-library/jest-dom/extend-expect';
 import 'jest-canvas-mock';
 import { cleanup } from '@testing-library/react';
-import { server } from './mocks/server.js';
+import { server } from './mocks/server';
 
 beforeAll(() => server.listen());
 
