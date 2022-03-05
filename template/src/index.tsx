@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// eslint-disable-next-line
-const { worker } = require('./mocks/browser');
+import './index.css';
+import { worker } from './mocks/browser';
+import App from './App';
 
 worker.start();
 
