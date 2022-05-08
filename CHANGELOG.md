@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/jrock2004/cra-template-a11y/compare/v2.0.0...v2.0.1) (2022-05-08)
+
+
+### Bug Fixes
+
+* adding if check to make sure container is seen ([425386f](https://github.com/jrock2004/cra-template-a11y/commit/425386f3fcbe6123e99e7cf282311d27d4af3ba3))
+
 ## [2.0.0](https://github.com/jrock2004/cra-template-a11y/compare/v1.6.3...v2.0.0) (2022-05-08)
 
 
