@@ -8,9 +8,14 @@ import App from './App';
 worker.start();
 
 const container = document.getElementById('root');
-const root = createRoot(container);
 
-root.render(<App />);
+if (container) {
+  const root = createRoot(container);
+
+  root.render(<App />);
+} else {
+  throw new Error('No container with the name of root found');
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
