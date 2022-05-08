@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/jrock2004/cra-template-a11y/compare/v1.6.3...v2.0.0) (2022-05-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgrading to react 18
+
+### Features
+
+* upgrading dependencies ([ec2ad1d](https://github.com/jrock2004/cra-template-a11y/commit/ec2ad1db8678426de9474a4063942d26cdb08b27))
+
 ### [1.6.3](https://github.com/jrock2004/cra-template-a11y/compare/v1.6.2...v1.6.3) (2022-03-12)
 
 ### [1.6.2](https://github.com/jrock2004/cra-template-a11y/compare/v1.6.1...v1.6.2) (2022-03-05)
