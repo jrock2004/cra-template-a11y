@@ -55,6 +55,7 @@
       "lint:err": "yarn run lint -- --quiet",
       "lint:fix": "yarn run prettier && npm run lint -- --fix --fix-type layout,suggestion,problem",
       "prettier": "prettier '**/*.+(js|ts|tsx)' --write",
+      "generate": "node ./scripts/generate.mjs",
       "prepare": "husky install",
       "release": "standard-version"
     },
