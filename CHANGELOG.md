@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/jrock2004/cra-template-a11y/compare/v2.0.2...v2.1.0) (2022-06-11)
+
+
+### Features
+
+* adding support to use yarn to generate files ([b6979d2](https://github.com/jrock2004/cra-template-a11y/commit/b6979d2f50d19a5cbbe3fd3155b38323e65fa298))
+
 ### [2.0.2](https://github.com/jrock2004/cra-template-a11y/compare/v2.0.1...v2.0.2) (2022-06-11)
 
 ### [2.0.1](https://github.com/jrock2004/cra-template-a11y/compare/v2.0.0...v2.0.1) (2022-05-08)
