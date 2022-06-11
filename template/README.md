@@ -26,9 +26,9 @@ Same as yarn start but this will make it open the app in your safari browser.
 
 Same as yarn start but this will make it open the app in your firefox browser.
 
-### `yarn server`
+### `yarn generate`
 
-This is a mini express mock server so you can mock some API calls to build your site
+Allows you to generate things like components css modules, tests and such
 
 ### `yarn test`
 
@@ -88,3 +88,7 @@ Will run prettier against your whole project and will fix what it finds.
 ### `yarn run prepare`
 
 This will set up husky so it can run commit checks and such in your project.
+
+### `yarn run release`
+
+This will generate a new version of your app and create a changlog entry

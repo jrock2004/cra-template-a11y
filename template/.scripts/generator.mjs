@@ -1,4 +1,10 @@
 import fs from 'fs';
+import {
+  componentTemplate,
+  cssModuleTemplate,
+  storyTemplate,
+  testTemplate
+} from './templates.mjs';
 
 const args = process.argv.slice(2);
 
@@ -51,22 +57,8 @@ function createComponent(name) {
   const componentName = name.charAt(0).toUpperCase() + name.slice(1);
   const componentDir = `./src/components/${componentName}`;
   const componentFile = `${componentDir}/index.tsx`;
-  const componentTemplate = `import { ReactElement } from 'react';
 
-export const ${componentName} = (): ReactElement => {
-  return <div data-testid="${componentName}">${componentName}</div>;
-};
-
-`;
-
-  if (!fileExists(componentFile)) {
-    fs.mkdirSync(componentDir, { recursive: true });
-    fs.writeFileSync(componentFile, componentTemplate);
-
-    logSuccess(`Component ${componentName} created`);
-  } else {
-    logWarning(`Component ${componentName} already exists`);
-  }
+  createFile(componentDir, componentFile, componentTemplate(componentName));
 }
 
 /**
@@ -78,20 +70,8 @@ function createCssModule(name) {
   const componentName = name.charAt(0).toUpperCase() + name.slice(1);
   const componentDir = `./src/components/${componentName}`;
   const cssModuleFile = `${componentDir}/${componentName}.module.scss`;
-  const cssModuleTemplate = `.${componentName} {
-  color: #000;
-}
 
-`;
-
-  if (!fileExists(cssModuleFile)) {
-    fs.mkdirSync(componentDir, { recursive: true });
-    fs.writeFileSync(cssModuleFile, cssModuleTemplate);
-
-    logSuccess(`CSS module ${componentName} created`);
-  } else {
-    logWarning(`CSS module ${componentName} already exists`);
-  }
+  createFile(componentDir, cssModuleFile, cssModuleTemplate(componentName));
 }
 
 /**
@@ -103,27 +83,8 @@ function createTest(name) {
   const componentName = name.charAt(0).toUpperCase() + name.slice(1);
   const componentDir = `./src/components/${componentName}`;
   const testFile = `${componentDir}/${componentName}.test.tsx`;
-  const testTemplate = `import { render, screen } from '@testing-library/react';
 
-import { ${componentName} } from '.';
-
-describe('${componentName}', () => {
-  it('should render correctly', () => {
-    render(<${componentName} />);
-
-    expect(screen.getByTestId('${componentName}')).toBeInTheDocument();
-  });
-});
-`;
-
-  if (!fileExists(testFile)) {
-    fs.mkdirSync(componentDir, { recursive: true });
-    fs.writeFileSync(testFile, testTemplate);
-
-    logSuccess(`Test ${componentName} created`);
-  } else {
-    logWarning(`Test ${componentName} already exists`);
-  }
+  createFile(componentDir, testFile, testTemplate(componentName));
 }
 
 /**
@@ -136,30 +97,18 @@ function createStory(name, title) {
   const componentName = name.charAt(0).toUpperCase() + name.slice(1);
   const componentDir = `./src/components/${componentName}`;
   const storyFile = `${componentDir}/${componentName}.stories.tsx`;
-  const storyTemplate = `import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import { ${componentName} } from '.';
+  createFile(componentDir, storyFile, storyTemplate(componentName, title));
+}
 
-export default {
-  title: '${title}',
-  component: ${componentName},
-} as ComponentMeta<typeof ${componentName}>;
+function createFile(dir, filePath, content) {
+  if (!fileExists(filePath)) {
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(filePath, content);
 
-const Template: ComponentStory<typeof ${componentName}> = (args: typeof ${componentName}) => <${componentName} {...args} />;
-
-export const Default = Template.bind({});
-
-Default.args = {};
-
-`;
-
-  if (!fileExists(storyFile)) {
-    fs.mkdirSync(componentDir, { recursive: true });
-    fs.writeFileSync(storyFile, storyTemplate);
-
-    logSuccess(`Story ${componentName} created`);
+    logSuccess(`${filePath} created`);
   } else {
-    logWarning(`Story ${componentName} already exists`);
+    logWarning(`${filePath} already exists`);
   }
 }
 
