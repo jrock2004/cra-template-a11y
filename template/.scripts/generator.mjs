@@ -53,9 +53,10 @@ function createComponent(name) {
   const componentFile = `${componentDir}/index.tsx`;
   const componentTemplate = `import { ReactElement } from 'react';
 
-const ${componentName} = (): ReactElement => {
-return <div data-testid="${componentName}">${componentName}</div>;
-}
+export const ${componentName} = (): ReactElement => {
+  return <div data-testid="${componentName}">${componentName}</div>;
+};
+
 `;
 
   if (!fileExists(componentFile)) {
@@ -78,7 +79,10 @@ function createCssModule(name) {
   const componentDir = `./src/components/${componentName}`;
   const cssModuleFile = `${componentDir}/${componentName}.module.scss`;
   const cssModuleTemplate = `.${componentName} {
-}`;
+  color: #000;
+}
+
+`;
 
   if (!fileExists(cssModuleFile)) {
     fs.mkdirSync(componentDir, { recursive: true });
@@ -137,14 +141,16 @@ function createStory(name, title) {
 import { ${componentName} } from '.';
 
 export default {
-title: '${title}',
-component: ${componentName},
+  title: '${title}',
+  component: ${componentName},
 } as ComponentMeta<typeof ${componentName}>;
 
-const Template: ComponentStory<typeof ${componentName}> = (args) => <${componentName} {...args} />;
+const Template: ComponentStory<typeof ${componentName}> = (args: typeof ${componentName}) => <${componentName} {...args} />;
 
 export const Default = Template.bind({});
+
 Default.args = {};
+
 `;
 
   if (!fileExists(storyFile)) {
