@@ -1,6 +1,22 @@
 {
   "types": [
     {
+      "type": "build",
+      "section": "Builds"
+    },
+    {
+      "type": "chore",
+      "section": "Minor"
+    },
+    {
+      "type": "ci",
+      "section": "Continuous Integration"
+    },
+    {
+      "type": "docs",
+      "section": "Other Changes"
+    },
+    {
       "type": "feat",
       "section": "Features"
     },
@@ -9,20 +25,24 @@
       "section": "Bug Fixes"
     },
     {
-      "type": "other",
-      "section": "Other Changes"
+      "type": "perf",
+      "section": "Performance Changes"
     },
     {
-      "type": "docs",
-      "section": "Other Changes"
+      "type": "refactor",
+      "section": "Internal"
+    },
+    {
+      "type": "revert",
+      "section": "Revert Changes"
     },
     {
       "type": "style",
       "section": "Other Changes"
     },
     {
-      "type": "refactor",
-      "section": "Internal"
+      "type": "test",
+      "section": "Testing Changes"
     }
   ]
 }
