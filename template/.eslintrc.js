@@ -52,7 +52,7 @@ module.exports = {
     ],
     'react/react-in-jsx-scope': 'off',
     'no-unused-vars': 'warn',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': 'warn',
     'padding-line-between-statements': [
       'error',
       {
