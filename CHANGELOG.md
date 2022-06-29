@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/jrock2004/cra-template-a11y/compare/v2.2.1...v2.3.0) (2022-06-29)
+
+
+### Features
+
+* adding prettier support for tailwind class ordering ([588c863](https://github.com/jrock2004/cra-template-a11y/commit/588c8632b1486d634f5a0e3f822b592e723050eb))
+
 ### [2.2.1](https://github.com/jrock2004/cra-template-a11y/compare/v2.2.0...v2.2.1) (2022-06-29)
 
 
