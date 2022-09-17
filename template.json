@@ -21,25 +21,23 @@
     "devDependencies": {
       "@commitlint/cli": "^17.0.2",
       "@commitlint/config-conventional": "^17.0.2",
-      "@typescript-eslint/eslint-plugin": "^5.27.1",
-      "@typescript-eslint/parser": "^5.27.1",
+      "@typescript-eslint/eslint-plugin": "^5.37.0",
+      "@typescript-eslint/parser": "^5.37.0",
       "autoprefixer": "^10.4.7",
-      "eslint": "^8.17.0",
-      "eslint-config-airbnb": "^19.0.4",
+      "eslint": "^8.23.1",
       "eslint-config-prettier": "^8.5.0",
+      "eslint-plugin-import": "^2.26.0",
+      "eslint-plugin-jsx-a11y": "^6.6.1",
+      "eslint-plugin-prettier": "^4.2.1",
+      "eslint-config-airbnb": "^19.0.4",
       "eslint-config-react-app": "^7.0.1",
       "eslint-plugin-flowtype": "^8.0.3",
-      "eslint-plugin-import": "^2.26.0",
       "eslint-plugin-jest": "^26.5.3",
-      "eslint-plugin-jsx-a11y": "^6.5.1",
-      "eslint-plugin-prettier": "^4.0.0",
       "eslint-plugin-react": "^7.30.0",
       "eslint-plugin-react-hooks": "^4.5.0",
-      "eslint-plugin-react-redux": "^4.0.0",
-      "eslint-plugin-test-selectors": "^2.0.3",
       "postcss": "^8.4.14",
       "husky": "^8.0.1",
-      "prettier": "^2.6.2",
+      "prettier": "^2.7.1",
       "prettier-plugin-tailwindcss": "^0.1.11",
       "tailwindcss": "^3.1.2"
     },
@@ -61,7 +59,52 @@
       "release": "standard-version"
     },
     "eslintConfig": {
-      "extends": "react-app"
+      "extends": [
+        "@jrock2004/eslint-config",
+        "react-app",
+        "plugin:react/recommended",
+        "plugin:jest/recommended",
+        "plugin:jest/style",
+        "plugin:jsx-a11y/recommended",
+        "plugin:prettier/recommended"
+      ],
+      "plugins": ["jsx-a11y"],
+      "rules": {
+        "react/jsx-sort-default-props": ["error", { "ignoreCase": true }],
+        "react/jsx-sort-props": [
+          "error",
+          {
+            "callbacksLast": true,
+            "shorthandFirst": true,
+            "ignoreCase": true,
+            "reservedFirst": true
+          }
+        ],
+        "react/sort-prop-types": [
+          "error",
+          {
+            "callbacksLast": true,
+            "ignoreCase": true,
+            "sortShapeProp": true
+          }
+        ],
+        "react/sort-comp": [
+          "error",
+          {
+            "order": [
+              "static-variables",
+              "static-methods",
+              "lifecycle",
+              "/^on.+$/",
+              "everything-else",
+              "render"
+            ]
+          }
+        ],
+        "react/react-in-jsx-scope": "off",
+        "react/no-unescaped-entities": ["warn"],
+        "react/prop-types": 0
+      }
     },
     "browserslist": {
       "production": [
