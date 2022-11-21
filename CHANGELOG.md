@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/jrock2004/cra-template-a11y/compare/v2.3.0...v2.5.0) (2022-11-21)
+
+
+### Features
+
+* moving eslint config back to rc file ([e44dc1a](https://github.com/jrock2004/cra-template-a11y/commit/e44dc1a4aee03817342f105294d5a6eb46e76296))
+* updating dependencies and adding prettier ([4d6bf21](https://github.com/jrock2004/cra-template-a11y/commit/4d6bf2130259392cbf7e2f115bd3444ad68877e8))
+
+
+### Minor
+
+* **release:** 2.3.1 ([4107126](https://github.com/jrock2004/cra-template-a11y/commit/41071261ccc645741f682418a4403565e8789c05))
+* **release:** 2.4.0 ([d79546c](https://github.com/jrock2004/cra-template-a11y/commit/d79546c2fb593f1633a5bae3b319f64449047ac8))
+* testing new template ([ee04e92](https://github.com/jrock2004/cra-template-a11y/commit/ee04e926b70ca022771bf5452968df1fead8bb64))
+
 ## [2.4.0](https://github.com/jrock2004/cra-template-a11y/compare/v2.3.1...v2.4.0) (2022-09-18)
 
 
