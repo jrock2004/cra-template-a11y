@@ -22,6 +22,7 @@
       "@commitlint/cli": "^17.2.0",
       "@commitlint/config-conventional": "^17.2.0",
       "@jrock2004/eslint-config": "^1.0.3",
+      "@jrock2004/prettier-config": "^1.1.0",
       "@typescript-eslint/eslint-plugin": "^5.43.0",
       "@typescript-eslint/parser": "^5.43.0",
       "autoprefixer": "^10.4.13",
@@ -30,9 +31,7 @@
       "eslint-plugin-import": "^2.26.0",
       "eslint-plugin-jsx-a11y": "^6.6.1",
       "eslint-plugin-prettier": "^4.2.1",
-      "eslint-config-airbnb": "^19.0.4",
       "eslint-config-react-app": "^7.0.1",
-      "eslint-plugin-flowtype": "^8.0.3",
       "eslint-plugin-jest": "^27.1.5",
       "eslint-plugin-react": "^7.31.11",
       "eslint-plugin-react-hooks": "^4.6.0",
@@ -60,11 +59,23 @@
       "release": "standard-version"
     },
     "browserslist": {
-      "production": [">0.2%", "not dead", "not op_mini all"],
-      "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
     },
     "jest": {
-      "collectCoverageFrom": ["src/**/*.ts", "src/**/*.tsx", "!src/**/*.d.ts"],
+      "collectCoverageFrom": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "!src/**/*.d.ts"
+      ],
       "moduleNameMapper": {
         "\\.(css|less|scss|sass)$": "identity-obj-proxy"
       }
@@ -73,7 +84,11 @@
       "workerDirectory": "public"
     },
     "eslintConfig": {
-      "extends": ["@jrock2004/eslint-config"]
+      "extends": [
+        "@jrock2004/eslint-config",
+        "eslint-config-react-app",
+        "eslint-plugin-react-hooks"
+      ]
     },
     "prettier": "@jrock2004/prettier-config"
   }
