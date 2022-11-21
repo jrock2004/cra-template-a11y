@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.5.1](https://github.com/jrock2004/cra-template-a11y/compare/v2.5.0...v2.5.1) (2022-11-21)
+
+
+### Bug Fixes
+
+* cleaning up some mistakes ([de8f44f](https://github.com/jrock2004/cra-template-a11y/commit/de8f44f0614ee387116150110c6c93da18561e2e))
+
 ## [2.5.0](https://github.com/jrock2004/cra-template-a11y/compare/v2.3.0...v2.5.0) (2022-11-21)
 
 
