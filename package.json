@@ -13,20 +13,21 @@
     "homepage": "https://github.com/jrock2004/cra-template-a11y"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.2",
-    "@commitlint/config-conventional": "^17.0.2",
-    "@jrock2004/eslint-config": "^1.0.2",
-    "@typescript-eslint/eslint-plugin": "^5.37.0",
-    "@typescript-eslint/parser": "^5.37.0",
-    "eslint": "^8.23.1",
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "@jrock2004/eslint-config": "^1.0.3",
+    "@jrock2004/prettier-config": "^1.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.1",
+    "husky": "^8.0.2",
     "prettier": "^2.7.1",
     "standard-version": "^9.5.0",
-    "typescript": "^4.8.3"
+    "typescript": "^4.9.3"
   },
   "scripts": {
     "release": "standard-version",
@@ -37,5 +38,6 @@
     "extends": [
       "@jrock2004/eslint-config"
     ]
-  }
+  },
+  "prettier": "@jrock2004/prettier-config"
 }
